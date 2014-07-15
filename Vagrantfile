@@ -21,8 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # config.vm.network "public_network"
 
   config.vm.provider "digital_ocean" do |provider|
-		provider.client_id = ''
-		provider.api_key = ''
+		provider.token = ''
     provider.image = "Ubuntu 14.04 x64"
     provider.region = "New York 2"
 		provider.size = "512MB"
